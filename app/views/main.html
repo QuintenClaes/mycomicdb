@@ -1,16 +1,45 @@
 <!DOCTYPE html>
-
 <html>
-    <head>
-        <title>#{get 'title' /}</title>
-        <meta charset="${_response_encoding}">
-        <link rel="stylesheet" media="screen" href="@{'/public/stylesheets/main.css'}">
-        #{get 'moreStyles' /}
-        <link rel="shortcut icon" type="image/png" href="@{'/public/images/favicon.png'}">
-        <script src="@{'/public/javascripts/jquery-1.6.4.min.js'}" type="text/javascript" charset="${_response_encoding}"></script>
-        #{get 'moreScripts' /}
-    </head>
-    <body>
-        #{doLayout /}
-    </body>
+  <head>
+    <title>#{get 'title' /}</title>
+    <meta charset="${_response_encoding}">
+    <link rel="stylesheet" media="screen" href="@{'/public/stylesheets/main.css'}">
+    <link rel="stylesheet" media="screen" href="@{'/public/stylesheets/bootstrap.css'}">
+    #{get 'moreStyles' /}
+    <link rel="shortcut icon" type="image/png" href="@{'/public/images/favicon.png'}">
+    <script src="@{'/public/javascripts/jquery-1.6.4.min.js'}" type="text/javascript" charset="${_response_encoding}"></script>
+    #{get 'moreScripts' /}
+  </head>
+  <body>
+  <div class="container">
+    <header class="row">
+      <div class="row">
+        <a class="brand span12">
+        <h1>Super awesome logo time</h1>
+        </a>
+      </div>
+      <div class="row">
+        <nav class="span6">
+          <ul class="nav nav-pills">
+            <li class="active"><a href="@{Application.index()}">Home</a></li>
+            <li><a href="">Nieuwste</a></li>
+            <li><a href="">Meest Gelezen</a></li>
+            <li><a href="">Best gewaardeerde</a></li>
+          </ul>
+        </nav>
+        <form class="span6" action="form_action.asp" method="get" class="pull-right form-search">
+          <input class="search-query" type="text" name="search_query"  value="" placeholder="Search" />
+          <input class="btn" type="submit" value="Zoeken" />
+        </form>
+      </div>
+    </header>
+    <section class="row">
+      <!-- Begin of main content area -->  
+      #{doLayout /}
+      <!-- End of main content area -->  
+      <footer class="main-footer">
+        <p>&copy; Comic Books - Artesis ( Michel & Quinten )</p> 
+      </footer>
+    </section>
+  </body>
 </html>
