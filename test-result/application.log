@@ -1,0 +1,5 @@
+23 apr 2012 19:06:19,210 INFO  ~ Starting /Users/maartenclaes/Desktop/ComicBooks
+23 apr 2012 19:06:20,347 WARN  ~ You're running Play! in DEV mode
+23 apr 2012 19:06:20,707 INFO  ~ Listening for HTTP on port 9000 (Waiting a first request to start) ...
+23 apr 2012 19:06:36,899 INFO  ~ Connected to jdbc:h2:mem:play;MODE=MYSQL;LOCK_MODE=0
+23 apr 2012 19:06:37,063 INFO  ~ Application 'ComicBooks' is now started !
