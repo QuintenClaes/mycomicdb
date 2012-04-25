@@ -1,11 +1,12 @@
 body {
   border-top: 5px solid #ddd;
+  border-bottom: 5px solid #ddd;
 }
 
 .brand {
-  height: 60px;
+  height: 100px;
   background-image: url('/public/images/header.jpg') 0px -50px;
-  text-indent: -9999px;
+  /*text-indent: -9999px;*/
   overflow:hidden;
   display:block;
 }
@@ -13,5 +14,5 @@ body {
 .main-footer {
   margin: 20px 0;
   padding: 20px 10px 0px;
-  border-top: 1px solid #ddd;
+  border-top: 1px solid #0088cc;
 }

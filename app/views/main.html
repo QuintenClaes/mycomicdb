@@ -8,29 +8,57 @@
     #{get 'moreStyles' /}
     <link rel="shortcut icon" type="image/png" href="@{'/public/images/favicon.png'}">
     <script src="@{'/public/javascripts/jquery-1.6.4.min.js'}" type="text/javascript" charset="${_response_encoding}"></script>
-    #{get 'moreScripts' /}
+	<script src="@{'/public/javascripts/bootstrap.min.js'}" type="text/javascript" charset="${_response_encoding}"></script>
+	#{get 'moreScripts' /}
   </head>
   <body>
   <div class="container">
     <header class="row">
       <div class="row">
-        <a class="brand span12">
-        <h1>Super awesome logo time</h1>
+        <a class="brand span5">
+			<img src="/public/images/header.jpg" alt "Header" />
         </a>
-      </div>
+		<div class="span7">
+			<div class="pull-right btn-group">
+			  <a class="btn btn-primary" href="#"><i class="icon-user icon-white"></i> User</a>
+			  <a class="btn btn-primary dropdown-toggle" data-toggle="dropdown" href="#"><span class="caret"></span></a>
+			  <ul class="dropdown-menu">
+				<li><a href="#"><i class="icon-pencil"></i> Edit</a></li>
+				<li><a href="#"><i class="icon-trash"></i> Delete</a></li>
+				<li><a href="#"><i class="icon-ban-circle"></i> Ban</a></li>
+				<li class="divider"></li>
+				<li><a href="#"><i class="i"></i> Make admin</a></li>
+			  </ul>
+			</div>
+		</div>
+			<!--<form class="well form-inline">
+			  <input type="text" class="input-small" placeholder="Email">
+			  <input type="password" class="input-small" placeholder="Wachtwoord">
+			  <label class="checkbox">
+				<input type="checkbox"> Onthouden
+			  </label>
+			  <button type="submit" class="btn">Aanmelden</button>
+			  <a class="btn" href="@{Application.registreren()}">Registreren</a>
+			</form>-->
+		</div>
+
+	  
       <div class="row">
-        <nav class="span6">
+        <nav class=" span6">
           <ul class="nav nav-pills">
-            <li class="active"><a href="@{Application.index()}">Home</a></li>
-            <li><a href="">Nieuwste</a></li>
-            <li><a href="">Meest Gelezen</a></li>
-            <li><a href="">Best gewaardeerde</a></li>
+            <li class="#{activeRoute href:@Application.index(), activeClass:'active' /}"><a href="@{Application.index()}">Home</a></li>
+            <li class="#{activeRoute href:@Application.nieuwste(), activeClass:'active' /}"><a href="@{Application.nieuwste()}">Nieuwste</a></li>
+            <li class="#{activeRoute href:@Application.meestGelezen(), activeClass:'active' /}"><a href="@{Application.meestGelezen()}">Meest Gelezen</a></li>
+            <li class="#{activeRoute href:@Application.bestGewaardeerde(), activeClass:'active' /}"><a href="@{Application.bestGewaardeerde()}">Best gewaardeerde</a></li>
           </ul>
         </nav>
-        <form class="span6" action="form_action.asp" method="get" class="pull-right form-search">
-          <input class="search-query" type="text" name="search_query"  value="" placeholder="Search" />
-          <input class="btn" type="submit" value="Zoeken" />
-        </form>
+		<div class="span6">
+			<form action="in te vullen" method="get" class="form-search pull-right">
+			  <input class="search-query" type="text" name="search_query"  value="" placeholder="Zoeken" />
+			  <a class="btn" type="submit"><i class="icon-search"></i></a>
+			  <a class="btn" href="@{Application.geavenceerdZoeken()}">Geavanceerd Zoeken</a>
+			</form>
+		</div>
       </div>
     </header>
     <section class="row">
