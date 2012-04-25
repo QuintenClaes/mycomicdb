@@ -7,7 +7,7 @@
     <link rel="stylesheet" media="screen" href="@{'/public/stylesheets/bootstrap.css'}">
     #{get 'moreStyles' /}
     <link rel="shortcut icon" type="image/png" href="@{'/public/images/favicon.png'}">
-    <script src="@{'/public/javascripts/jquery-1.6.4.min.js'}" type="text/javascript" charset="${_response_encoding}"></script>
+    <script src="@{'/public/javascripts/jquery-1.7.2.min.js'}" type="text/javascript" charset="${_response_encoding}"></script>
 	<script src="@{'/public/javascripts/bootstrap.min.js'}" type="text/javascript" charset="${_response_encoding}"></script>
 	#{get 'moreScripts' /}
   </head>
@@ -20,14 +20,12 @@
         </a>
 		<div class="span7">
 			<div class="pull-right btn-group">
-			  <a class="btn btn-primary" href="#"><i class="icon-user icon-white"></i> User</a>
+			  <a class="btn btn-primary" href="#"><i class="icon-user icon-white"></i> Gebruiker</a>
 			  <a class="btn btn-primary dropdown-toggle" data-toggle="dropdown" href="#"><span class="caret"></span></a>
 			  <ul class="dropdown-menu">
-				<li><a href="#"><i class="icon-pencil"></i> Edit</a></li>
-				<li><a href="#"><i class="icon-trash"></i> Delete</a></li>
-				<li><a href="#"><i class="icon-ban-circle"></i> Ban</a></li>
-				<li class="divider"></li>
-				<li><a href="#"><i class="i"></i> Make admin</a></li>
+				<li><a href="#"><i class="icon-ok"></i> Gelezen</a></li>
+				<li><a href="#"><i class="icon-flag"></i> Nog te lezen</a></li>
+				<li><a href="#"><i class="icon-align-justify"></i> Mijn collectie</a></li>
 			  </ul>
 			</div>
 		</div>

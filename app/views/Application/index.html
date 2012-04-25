@@ -4,106 +4,42 @@
 <div class="row">
   <div class="span6">
     <h1>Top 10</h1>
-    <article>
-      <h6>
-		  Some Comic name   
-		  <a class="btn btn-mini pull-right" type="submit"><i class="icon-ok"></i></a>
-		  <a class="btn btn-mini pull-right" type="submit"><i class="icon-flag"></i></a>
-	  </h6>
-      <p>1999 - Marvel Comics - Batman </p>
-    </article>
-    <article>
-      <h6>
-		  Some Comic name
-		  <a class="btn btn-mini pull-right" type="submit"><i class="icon-ok"></i></a>
-		  <a class="btn btn-mini pull-right" type="submit"><i class="icon-flag"></i></a>
-	  </h6>
-      <p>1999 - Marvel Comics - Batman</p>
-    </article>
-    <article>
-      <h6>
-		  Een strip :)
-		  <a class="btn btn-mini pull-right" type="submit"><i class="icon-ok"></i></a>
-		  <a class="btn btn-mini pull-right" type="submit"><i class="icon-flag"></i></a>
-	  </h6>
-      <p>2003 - Nero - Jommeke</p>
-    </article>
-    <article>
-      <h6>
-		  Bit by a spider
-		  <a class="btn btn-mini pull-right" type="submit"><i class="icon-ok"></i></a>
-		  <a class="btn btn-mini pull-right" type="submit"><i class="icon-flag"></i></a>
-	  </h6>
-      <p>1999 - Marvel Comics - Batman</p>
-    </article>
-    <article>
-      <h6>
-		  Er was eens
-		  <a class="btn btn-mini pull-right" type="submit"><i class="icon-ok"></i></a>
-		  <a class="btn btn-mini pull-right" type="submit"><i class="icon-flag"></i></a>
-	  </h6>
-      <p>2003 - Nero - Jommeke</p>
-    </article>
-    <article>
-      <h6>
-		  Some Comic name
-		  <a class="btn btn-mini pull-right" type="submit"><i class="icon-ok"></i></a>
-		  <a class="btn btn-mini pull-right" type="submit"><i class="icon-flag"></i></a>
-	  </h6>
-      <p>1999 - Marvel Comics - Batman</p>
-    </article>
+		%{ 
+		  for (int i = 1; i < 10; i++ ) { 
+		}%
+		<article class="row">
+		  <div class="span8">
+			<h6>Some Comic name</h6>
+			<p>1999 - Marvel Comics - Batman </p>
+		  </div>
+		  <div class="pull-right">
+			<a class="btn btn-mini" type="submit"><i class="icon-flag"></i></a>
+			<a class="btn btn-mini" type="submit" rel="tooltip" title="Gelezen" data-animation="true" data-placement="top"><i class="icon-ok"></i></a>
+		  </div>
+		</article>
+	   %{ 
+		} 
+	   }%
 	<a class="pull-right btn mini" href="@{Application.bestGewaardeerde()}">Meer</a>
   </div> 	
   <div class="span6">
     <h1>Nieuwste</h1>
-    <article>
-      <h6>
-		  Some Comic name   
-		  <a class="btn btn-mini pull-right" type="submit"><i class="icon-ok"></i></a>
-		  <a class="btn btn-mini pull-right" type="submit"><i class="icon-flag"></i></a>
-	  </h6>
-      <p>1999 - Marvel Comics - Batman </p>
-    </article>
-    <article>
-      <h6>
-		  Some Comic name
-		  <a class="btn btn-mini pull-right" type="submit"><i class="icon-ok"></i></a>
-		  <a class="btn btn-mini pull-right" type="submit"><i class="icon-flag"></i></a>
-	  </h6>
-      <p>1999 - Marvel Comics - Batman</p>
-    </article>
-    <article>
-      <h6>
-		  Een strip :)
-		  <a class="btn btn-mini pull-right" type="submit"><i class="icon-ok"></i></a>
-		  <a class="btn btn-mini pull-right" type="submit"><i class="icon-flag"></i></a>
-	  </h6>
-      <p>2003 - Nero - Jommeke</p>
-    </article>
-    <article>
-      <h6>
-		  Bit by a spider
-		  <a class="btn btn-mini pull-right" type="submit"><i class="icon-ok"></i></a>
-		  <a class="btn btn-mini pull-right" type="submit"><i class="icon-flag"></i></a>
-	  </h6>
-      <p>1999 - Marvel Comics - Batman</p>
-    </article>
-    <article>
-      <h6>
-		  Er was eens
-		  <a class="btn btn-mini pull-right" type="submit"><i class="icon-ok"></i></a>
-		  <a class="btn btn-mini pull-right" type="submit"><i class="icon-flag"></i></a>
-	  </h6>
-      <p>2003 - Nero - Jommeke</p>
-    </article>
-    <article>
-      <h6>
-		  Some Comic name
-		  <a class="btn btn-mini pull-right" type="submit"><i class="icon-ok"></i></a>
-		  <a class="btn btn-mini pull-right" type="submit"><i class="icon-flag"></i></a>
-	  </h6>
-      <p>1999 - Marvel Comics - Batman</p>
-    </article>
+		%{ 
+		  for (int i = 1; i < 10; i++ ) { 
+		}%
+		<article class="row">
+		  <div class="span8">
+			<h6>Some Comic name</h6>
+			<p>1999 - Marvel Comics - Batman </p>
+		  </div>
+		  <div class="pull-right">
+			<a class="btn btn-mini" type="submit"><i class="icon-flag"></i></a>
+			<a class="btn btn-mini" type="submit" rel="tooltip" title="Gelezen" data-animation="true" data-placement="top"><i class="icon-ok"></i></a>
+		  </div>
+		</article>
+	   %{ 
+		} 
+	   }%
 	<a class="pull-right btn mini" href="@{Application.nieuwste()}">Meer</a>
   </div>
 </div>
@@ -111,106 +47,42 @@
 <div class="row">	
   <div class="span6">
     <h1>Populair</h1>
-    <article>
-      <h6>
-		  Some Comic name   
-		  <a class="btn btn-mini pull-right" type="submit"><i class="icon-ok"></i></a>
-		  <a class="btn btn-mini pull-right" type="submit"><i class="icon-flag"></i></a>
-	  </h6>
-      <p>1999 - Marvel Comics - Batman </p>
-    </article>
-    <article>
-      <h6>
-		  Some Comic name
-		  <a class="btn btn-mini pull-right" type="submit"><i class="icon-ok"></i></a>
-		  <a class="btn btn-mini pull-right" type="submit"><i class="icon-flag"></i></a>
-	  </h6>
-      <p>1999 - Marvel Comics - Batman</p>
-    </article>
-    <article>
-      <h6>
-		  Een strip :)
-		  <a class="btn btn-mini pull-right" type="submit"><i class="icon-ok"></i></a>
-		  <a class="btn btn-mini pull-right" type="submit"><i class="icon-flag"></i></a>
-	  </h6>
-      <p>2003 - Nero - Jommeke</p>
-    </article>
-    <article>
-      <h6>
-		  Bit by a spider
-		  <a class="btn btn-mini pull-right" type="submit"><i class="icon-ok"></i></a>
-		  <a class="btn btn-mini pull-right" type="submit"><i class="icon-flag"></i></a>
-	  </h6>
-      <p>1999 - Marvel Comics - Batman</p>
-    </article>
-    <article>
-      <h6>
-		  Er was eens
-		  <a class="btn btn-mini pull-right" type="submit"><i class="icon-ok"></i></a>
-		  <a class="btn btn-mini pull-right" type="submit"><i class="icon-flag"></i></a>
-	  </h6>
-      <p>2003 - Nero - Jommeke</p>
-    </article>
-    <article>
-      <h6>
-		  Some Comic name
-		  <a class="btn btn-mini pull-right" type="submit"><i class="icon-ok"></i></a>
-		  <a class="btn btn-mini pull-right" type="submit"><i class="icon-flag"></i></a>
-	  </h6>
-      <p>1999 - Marvel Comics - Batman</p>
-    </article>
+		%{ 
+		  for (int i = 1; i < 10; i++ ) { 
+		}%
+		<article class="row">
+		  <div class="span8">
+			<h6>Some Comic name</h6>
+			<p>1999 - Marvel Comics - Batman </p>
+		  </div>
+		  <div class="pull-right">
+			<a class="btn btn-mini" type="submit"><i class="icon-flag"></i></a>
+			<a class="btn btn-mini" type="submit" rel="tooltip" title="Gelezen" data-animation="true" data-placement="top"><i class="icon-ok"></i></a>
+		  </div>
+		</article>
+	   %{ 
+		} 
+	   }%
 	<a class="pull-right btn mini" href="@{Application.meestGelezen()}">Meer</a>
   </div> 
   <div  class="span6">
     <h1>Meest gelezen</h1>    
-	<article>
-      <h6>
-		  Some Comic name   
-		  <a class="btn btn-mini pull-right" type="submit"><i class="icon-ok"></i></a>
-		  <a class="btn btn-mini pull-right" type="submit"><i class="icon-flag"></i></a>
-	  </h6>
-      <p>1999 - Marvel Comics - Batman </p>
-    </article>
-    <article>
-      <h6>
-		  Some Comic name
-		  <a class="btn btn-mini pull-right" type="submit"><i class="icon-ok"></i></a>
-		  <a class="btn btn-mini pull-right" type="submit"><i class="icon-flag"></i></a>
-	  </h6>
-      <p>1999 - Marvel Comics - Batman</p>
-    </article>
-    <article>
-      <h6>
-		  Een strip :)
-		  <a class="btn btn-mini pull-right" type="submit"><i class="icon-ok"></i></a>
-		  <a class="btn btn-mini pull-right" type="submit"><i class="icon-flag"></i></a>
-	  </h6>
-      <p>2003 - Nero - Jommeke</p>
-    </article>
-    <article>
-      <h6>
-		  Bit by a spider
-		  <a class="btn btn-mini pull-right" type="submit"><i class="icon-ok"></i></a>
-		  <a class="btn btn-mini pull-right" type="submit"><i class="icon-flag"></i></a>
-	  </h6>
-      <p>1999 - Marvel Comics - Batman</p>
-    </article>
-    <article>
-      <h6>
-		  Er was eens
-		  <a class="btn btn-mini pull-right" type="submit"><i class="icon-ok"></i></a>
-		  <a class="btn btn-mini pull-right" type="submit"><i class="icon-flag"></i></a>
-	  </h6>
-      <p>2003 - Nero - Jommeke</p>
-    </article>
-    <article>
-      <h6>
-		  Some Comic name
-		  <a class="btn btn-mini pull-right" type="submit"><i class="icon-ok"></i></a>
-		  <a class="btn btn-mini pull-right" type="submit"><i class="icon-flag"></i></a>
-	  </h6>
-      <p>1999 - Marvel Comics - Batman</p>
-    </article>	
+		%{ 
+		  for (int i = 1; i < 10; i++ ) { 
+		}%
+		<article class="row">
+		  <div class="span8">
+			<h6>Some Comic name</h6>
+			<p>1999 - Marvel Comics - Batman </p>
+		  </div>
+		  <div class="pull-right">
+			<a class="btn btn-mini" type="submit"><i class="icon-flag"></i></a>
+			<a class="btn btn-mini" type="submit" rel="tooltip" title="Gelezen" data-animation="true" data-placement="top"><i class="icon-ok"></i></a>
+		  </div>
+		</article>
+	   %{ 
+		} 
+	   }%	
 	<a class="pull-right btn mini" href="@{Application.bestGewaardeerde()}">Meer</a>
   </div>	
 </div>
